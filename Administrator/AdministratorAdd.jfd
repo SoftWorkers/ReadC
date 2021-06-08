@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p:555:p, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p:373:p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"title": "添加管理员"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "AdministratorAddAccontTxt"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 120
+					"height": 35
+					"x": 220
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "账号："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 20
+					"x": 155
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "AdministratorAddPasswdTxt"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 120
+					"height": 35
+					"x": 220
+					"y": 150
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "密码："
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 25
+					"x": 155
+					"y": 155
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "重置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 30
+					"x": 295
+					"y": 265
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "添加"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 30
+					"x": 145
+					"y": 265
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/blackground.jpg" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 600
+					"height": 480
+					"x": 0
+					"y": 0
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 550, 400 )
+		} )
+	}
+}
