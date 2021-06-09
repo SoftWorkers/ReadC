@@ -1,0 +1,129 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "悦读打卡管理端-主界面"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+					name: "table"
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/blackground.jpg" )
+					}, new FormLayoutConstraints( null ) {
+						"location": new java.awt.Point( 15, 505 )
+						"size": new java.awt.Dimension( 575, 420 )
+						"x": 0
+						"y": 0
+						"width": 585
+						"height": 480
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 573
+				"height": 475
+				"x": 0
+				"y": 0
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar2"
+					"minimumSize": new java.awt.Dimension( 10, 2 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": "学生信息"
+						"preferredSize": new java.awt.Dimension( 130, 30 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/student.png" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem6"
+							"text": "增加"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/plus.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6ActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem5"
+							"text": "删除"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/minus.png" )
+							"iconTextGap": 5
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem1"
+							"text": "查询、修改"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/look.png" )
+							"iconTextGap": 1
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar3"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu4"
+						"text": "打卡日志"
+						"preferredSize": new java.awt.Dimension( 130, 30 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/file.png" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": "查看"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/look.png" )
+							"iconTextGap": 1
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar4"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu7"
+						"text": "管理员信息"
+						"preferredSize": new java.awt.Dimension( 130, 30 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/administor.png" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem9"
+							"text": "增加"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/plus.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem9ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem8"
+							"text": "删除"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/minus.png" )
+							"iconTextGap": 5
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem8ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem3"
+							"text": "查询"
+							"preferredSize": new java.awt.Dimension( 130, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/ReadClockIn/picture/look.png" )
+							"iconTextGap": 1
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+						} )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 575, 530 )
+		} )
+	}
+}
