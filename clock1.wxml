@@ -1,0 +1,7 @@
+<!--pages/clock/clock.wxml-->
+<view class="bg">
+  <view class="content">
+    <image src="/pages/images/ditu.jpg" style="width:400px;height:300px" class="photo"></image>  
+    <button type="primary" class="loginBtn" style="width:160px;height:40px;margin-left:100px;margin-top:100px;margin-bottom:50px" bindtap="start" >提交今日打卡</button>
+  </view>
+</view>
