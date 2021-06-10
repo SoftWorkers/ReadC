@@ -1,22 +1,40 @@
 // pages/info/info.js
+const db=wx.cloud.database()
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    user:""
   },
   jumpPwd(event){
     wx.navigateTo({
       url: '../pwd/pwd',
     })
   },
+  getData(){
+    let loginAccount = app.userName
+    console.log(loginAccount)
+    db.collection("read").where({
+      loginAccount:loginAccount
+    }).get({
+        success:res=>{
+           console.log("获取数据成功", res)
+            this.setData({
+              user:res.data[0]
+            })
+        },
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getData()
+    console.log(this.data.user)
   },
 
   /**
@@ -30,7 +48,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**
