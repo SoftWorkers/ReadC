@@ -1,0 +1,37 @@
+<!--pages/num/num.wxml-->
+<!-- <text>pages/num/num.wxml</text> -->
+<view class="bg">
+  <view class="content">
+    <view class="username">
+      <view class="title">姓名：</view>
+        <view class="useid" style="width:200px;">
+          <input type="text" bindinput="getName" placeholder="请输入姓名" placeholder-style="color: black"/>
+        </view>
+      </view>
+      <view class="username">
+      <view class="title">学号：</view>
+        <view class="useid" style="width:200px;">
+          <input type="text" bindinput="getXueHao" placeholder="请输入学号" placeholder-style="color: black"/>
+        </view>
+      </view>
+      <view class="username">
+      <view class="title">专业：</view>
+        <view class="useid" style="width:200px;">
+          <input type="text" bindinput="getMajor" placeholder="请输入专业" placeholder-style="color: black"/>
+        </view>
+      </view>
+  <view class="passwd">
+    <view class="title">密码：</view>
+      <view class="useid" style="width:200px;">
+        <input type="text" bindinput="getPasswd" placeholder="请输入密码" placeholder-style="color: black"/>
+      </view>
+    </view>
+  <view class="passwd1">
+    <view class="title">确认密码：</view>
+      <view class="useid" style="width:200px;">
+        <input type="text" bindinput="getRepeat" placeholder="请再输入密码" placeholder-style="color: black"/>
+      </view>
+    </view>
+  <button type="primary" class="loginBtn" style="width:95px;height:40px;" bindtap="zhuce"  >确定</button>
+  </view>
+</view>
