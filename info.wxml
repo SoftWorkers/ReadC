@@ -1,13 +1,13 @@
 <!--pages/info/info.wxml-->
-<view class="bg">
+<view class="bg" >
    <view class="content">
      <image src="/pages/images/touxiang.png" style="width:100px;height:100px ;margin-left:120px;margin-top:40px;" class="photo"></image> 
      <view class="title" style="margin-top:50px;margin-left:70px;">学号：</view>
-
+      <view style="margin-top:-20px;margin-left:150px;">{{user.loginAccount}} </view> 
      <view class="title" style="margin-top:50px;margin-left:70px;">姓名：</view>
-
+     <view style="margin-top:-20px;margin-left:150px;">{{user.name}} </view> 
      <view class="title" style="margin-top:50px;margin-left:70px;">专业：</view>
-
+     <view style="margin-top:-20px;margin-left:150px;">{{user.major}} </view> 
      <button type="primary" class="loginBtn" bindtap="jumpPwd" style="width:120px;height:40px;margin-top:70px;">修改密码</button>
       </view>
 </view>
