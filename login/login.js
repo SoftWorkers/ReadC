@@ -1,8 +1,9 @@
 // pages/login/login.js
 const db=wx.cloud.database()
+var app =getApp()
 Page({
   data: {
-    loginAccount: 0,
+    loginAccount: '',
     passwd: ''
   },
   jumpPage(event){
@@ -32,7 +33,6 @@ Page({
     let loginAccount = this.data.loginAccount
     let passwd = this.data.passwd
     console.log('账号', loginAccount, '密码', passwd)
-
     //校验账号
     if(loginAccount.length < 9){
         wx.showToast({
@@ -52,6 +52,8 @@ Page({
             //密码校验
             if(passwd == user.passwd){
                 console.log('登录成功')
+                app.userName = loginAccount
+                console.log(app.userName)
                 wx.showToast({
                   title: '登录成功',
                 })
